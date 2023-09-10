@@ -1,10 +1,8 @@
 ﻿using Application.Helpers;
 
-var argument = Environment.GetCommandLineArgs();
-
 Console.WriteLine("Insira uma string:");
 
-var input = argument.Length > 1 ? argument[1] : Console.ReadLine();
+var input = args.Length > 0 ? args[0] : Console.ReadLine();
 
 if (input is null)
 {
